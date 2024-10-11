@@ -1,32 +1,33 @@
-const nome = "Flavinho"
-let quantExp = 520
-let ligas = "Ferro"
+const nome = "Jessiquinha"
+let quantExp = 245
+let ligas = ["Ferro" , "Bronze" , "Prata" , "Ouro" , "Platina" , "Ascendente" , "Imortal" , "Radiante"]
+let classes = ["Curandeiro","Mago","Cavaleiro","Arqueiro"]
 
-switch (true){
-    case (quantExp <= 1.000):
-        ligas = "Ferro"
-        console.log("Você está na liga Ferro")
-        break;
-    case (quantExp > 1.001 && quantExp < 2.000):
-        console.log("Você está na liga Bronze")
-        break;
-    case (quantExp > 2.001 && quantExp < 5.000):
-        console.log("Você está na liga Prata")
-        break;
-    case (quantExp > 5.001 && quantExp < 7.000):
-        console.log("Você está na liga Ouro")
-        break;
-    case (quantExp > 7.001 && quantExp < 8.000):
-        console.log("Você está na liga Platina")
-        break;
-    case (quantExp > 8.001 && quantExp < 9.000):
-        console.log("Você está na liga Ascendente")
-        break;
-    case (quantExp > 9.001 && quantExp < 10.000):
-        console.log("Você está na liga Imortal")
-        break;
-    default:
-        console.log("Você está na liga Radiante")
+    console.log("Se torne o melhor " + classes[3] + " deste mundo!")
+if(quantExp < 1000){
+    ligas = ligas[0]
+    console.log("Você está na liga Ferro")  
+}else if(quantExp >= 1000 && quantExp <2000){
+    ligas = ligas[1]
+    console.log("Você está na liga Bronze")
+}else if(quantExp >2001 && quantExp <5000){
+    ligas = ligas[2]
+    console.log("Você está na liga Prata")
+}else if(quantExp >5001 && quantExp <7000){
+    ligas = ligas[3]
+    console.log("Você está na liga Ouro")
+}else if(quantExp >7001 && quantExp <8000){
+    ligas = ligas[4]
+    console.log("Você está na liga Platina")
+}else if(quantExp >8001 && quantExp <9.000){
+    ligas = ligas[5]
+    console.log("Você está na liga Ascendente")
+}else if(quantExp >9.001 && quantExp <10000){
+    ligas = ligas[6]
+    console.log("Você está na liga Imortal")
+}else {
+    ligas = ligas[7]
+    console.log("Você está na liga Radiante")
 }
 
-console.log("O herói de nome: " + nome + " está no nível de " + ligas)
+console.log("O herói " + classes[3] + " de nome: " + nome + " está no nível de " + ligas)
